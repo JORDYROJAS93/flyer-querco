@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>40 Aniversario Centro de Salud Querco</title>
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .flyer {
+      border-radius: 20px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+      max-width: 520px;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      background: white;
+    }
+
+    /* Header con imagen del centro */
+    .header-bg {
+      background-image: url('images/Imagen_de_cs_querco.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 180px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header-bg::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(142, 57, 199, 0.6), rgba(81, 195, 199, 0.5));
+      border-radius: 20px 20px 0 0;
+    }
+
+    .logo-container {
+      position: absolute;
+      top: 40px;
+      left: 20px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .title {
+      color: white;
+      font-size: 30px;
+      font-weight: 700;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      z-index: 2;
+      text-align: center;
+      padding: 0 20px 0 100px;
+      font-family: 'Playfair Display', serif;  
+    }
+
+    /* Contenido con fondo personalizado */
+    .content {
+      background-image: url('images/fondo_parte_inferior.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 30px 25px;
+      position: relative;
+      color: black;
+      border-radius: 0 0 20px 20px;
+    }
+
+    /* Capa de superposición para mejorar legibilidad */
+    .content::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0); /* Oscurece el fondo para que el texto se lea */
+      border-radius: 0 0 20px 20px;
+      z-index: 1;
+    }
+
+    /* Contenido sobre la capa */
+    .content > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    .subtitle {
+      color: #ff5722;
+      font-size: 20px;
+      margin: 18px 0 12px 0;
+      font-weight: 600;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0;
+      text-align: left;
+    }
+
+    ul li {
+      margin: 10px 0;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .highlight {
+      color: #4a09c2;
+      font-weight: 600;
+    }
+
+    .emoji {
+      font-size: 1.2em;
+      margin-right: 6px;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 12px;
+      background: rgba(160, 122, 226, 0.8);
+      border-radius: 12px;
+      border-top: 3px solid #d1c4e9;
+    }
+
+    /* Decoración de lazos */
+    .deco {
+      position: absolute;
+      font-size: 28px;
+      color: #e91e63;
+      opacity: 0.8;
+      z-index: 2;
+    }
+
+    .deco.top {
+      top: 20px;
+      right: 20px;
+    }
+
+    .deco.bottom {
+      bottom: 20px;
+      right: 20px;
+    }
+
+    @media (max-width: 500px) {
+      .title {
+        font-size: 22px;
+      }
+      .content {
+        padding: 25px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="flyer">
+    <!-- Header con imagen del centro -->
+    <div class="header-bg">
+      <div class="deco top">🎀</div>
+      <h1 class="title">40 Aniversario del Centro de Salud Querco</h1>
+      <div class="logo-container">
+        <img src="images/logo_querco.png" alt="Logo Centro de Salud Querco" />
+      </div>
+    </div>
+
+    <!-- Contenido con fondo inferior personalizado -->
+    <div class="content">
+      <p>El equipo del Centro de Salud Querco te invita a celebrar cuatro décadas de servicio, compromiso y salud.</p>
+
+      <h2 class="subtitle">📅 Sábado, 28 de septiembre</h2>
+      <ul>
+        <li><span class="emoji">🕗</span> 8:00 a.m. - Desayuno de confraternidad: <span class="highlight">Patasca</span></li>
+        <li><span class="emoji">🎯</span> 2:00 p.m. - Gincana recreativa con premios</li>
+      </ul>
+
+      <h2 class="subtitle">📅 Domingo, 29 de septiembre</h2>
+      <ul>
+        <li><span class="emoji">🙏</span> 9:00 a.m. - Rezo de agradecimiento</li>
+        <li><span class="emoji">🥂</span> 10:00 a.m. - Brindis de honor</li>
+        <li><span class="emoji">🍽</span> 11:00 a.m. - Almuerzo protocolar</li>
+        <li><span class="emoji">🏐</span> 1:00 p.m. - Gran Campeonato de Vóley</li>
+        <li><span class="emoji">💃</span> 6:00 p.m. - Baile de confraternidad</li>
+      </ul>
+
+      <p class="footer">✨ ¡Tu presencia es parte de nuestra historia! ✨</p>
+    </div>
+    <div class="deco bottom">🎊</div>
+  </div>
+</body>
+</html>
+
+
