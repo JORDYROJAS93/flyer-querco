@@ -174,6 +174,37 @@
       right: 20px;
     }
 
+    /* Estilos para el botón de confirmación */
+    .confirmation {
+      margin: 25px 0 15px;
+      text-align: center;
+    }
+
+    .confirmation-btn {
+      display: inline-block;
+      background: #8e39c7;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .confirmation-btn:hover {
+      background: #6a2a9a;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    .confirmation-note {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+
     @media (max-width: 500px) {
       .title {
         font-size: 22px;
@@ -189,7 +220,7 @@
     <!-- Header con imagen del centro -->
     <div class="header-bg">
       <div class="deco top">🎀</div>
-      <h1 class="title">37 Aniversario del Centro de Salud Querco</h1>
+      <h1 class="title">40 Aniversario del Centro de Salud Querco</h1>
       <div class="logo-container">
         <img src="images/logo_querco.png" alt="Logo Centro de Salud Querco" />
       </div>
@@ -199,13 +230,13 @@
     <div class="content">
       <p>El equipo del Centro de Salud Querco te invita a celebrar cuatro décadas de servicio, compromiso y salud.</p>
 
-      <h2 class="subtitle">📅 Domingo, 28 de septiembre</h2>
+      <h2 class="subtitle">📅 Sábado, 28 de septiembre</h2>
       <ul>
         <li><span class="emoji">🕗</span> 8:00 a.m. - Desayuno de confraternidad: <span class="highlight">Patasca</span></li>
         <li><span class="emoji">🎯</span> 2:00 p.m. - Gincana recreativa con premios</li>
       </ul>
 
-      <h2 class="subtitle">📅 Lunes, 29 de septiembre</h2>
+      <h2 class="subtitle">📅 Domingo, 29 de septiembre</h2>
       <ul>
         <li><span class="emoji">🙏</span> 9:00 a.m. - Rezo de agradecimiento</li>
         <li><span class="emoji">🥂</span> 10:00 a.m. - Brindis de honor</li>
@@ -214,11 +245,17 @@
         <li><span class="emoji">💃</span> 6:00 p.m. - Baile de confraternidad</li>
       </ul>
 
+      <!-- Botón para confirmar asistencia mediante Google Forms -->
+      <div class="confirmation">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1VRNZnzlkQgqB2oSO2tBKv-_KU9b1mqXMtKsExXU5Ole5Lg/viewform?usp=sharing&ouid=113308166156461397382" target="_blank" class="confirmation-btn">
+         Confirmar Asistencia
+        </a>
+        <p class="confirmation-note">Serás redirigido a un formulario para confirmar tu participación</p>
+      </div>
+
       <p class="footer">✨ ¡Tu presencia es parte de nuestra historia! ✨</p>
     </div>
     <div class="deco bottom">🎊</div>
   </div>
 </body>
 </html>
-
-
